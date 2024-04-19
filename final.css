@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap");
+@keyframes animateBg {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+html {
+  height: 100%;
+}
+body {
+  background: url(bg.jpg);
+  animation: animateBg 5s linear infinite;
+  background-size: cover;
+}
+/* final.css */
+
+/* Change all font colors to aqua */
+body,
+header,
+nav,
+main,
+aside,
+footer,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+blockquote {
+  color: aqua;
+  font-size: 1.5rem;
+  font-family: "Platypi", serif;
+}
+header {
+  padding: 10px 20px; /* Adjust padding as needed */
+  border: 4px solid aqua; /* Set border style */
+  border-radius: 5px;
+  background-color: black;
+  margin: 20px;
+  text-align: center;
+}
+header:hover h1,
+header:hover h2,
+header:hover h3,
+header:hover h4,
+header:hover p,
+header:hover a,
+header:hover ul,
+header:hover li,
+header:hover blockquote {
+  text-shadow: 0 0 10px orange, 0 0 20px darkblue, 0 0 30px darkblue; /* Adjust glow effect */
+}
+header p a {
+  border: 2px solid aqua; /* Add a border */
+  padding: 10px; /* Optional: Add padding for spacing */
+  border-radius: 5px; /* Optional: Add border radius for rounded corners */
+  background-color: white;
+}
+header:hover p a {
+  background-color: red;
+}
+
+nav ul li {
+  list-style: disc; /* Remove default list style */
+}
+a {
+  line-height: 3;
+  border: 2px solid aqua; /* Add a border */
+  padding: 10px; /* Optional: Add padding for spacing */
+  border-radius: 5px; /* Optional: Add border radius for rounded corners */
+  background-color: grey;
+  fill: white;
+}
+a:hover {
+  background-color: red;
+}
+main > .container > article:first-child > section.container:first-of-type {
+  border: 10px double aqua; /* Adjust the border properties as needed */
+  padding: 20px; /* Optional: Add padding to the section */
+  margin: 20px; /* Optional: Add margin to create space */
+  border-radius: 5px;
+  background-color: black;
+}
+main
+  > .container
+  > article:first-child
+  > section.container:first-of-type
+  h2:not(.no-border) {
+  border: 1px solid black;
+}
+header h2 {
+  border: none;
+}
+
+/* Target the second section element with the class container inside main */
+main > .container > article:first-child > section.container:nth-of-type(2) {
+  margin: 20px;
+  padding: 20px;
+}
+main > .container > article:first-child > section.container:nth-of-type(2) h2 {
+  border: 4px groove aqua; /* Adjust the border properties as needed */
+  padding: 20px;
+  border-radius: 5px;
+  background-color: black;
+}
+main > .container > article:first-child > section.container:nth-of-type(2) ul {
+  border: 4px solid aqua; /* Adjust the border properties as needed */
+  padding: 30px;
+  line-height: 1.4;
+  border-radius: 5px;
+  background-color: black;
+}
+section,
+article,
+footer,
+aside {
+  /* margin: 20px; */
+  padding: 20px;
+}
+h2 {
+  border: 4px solid aqua;
+  border-radius: 5px;
+  background-color: black;
+  padding: 20px;
+}
+#files h3 {
+  border: 4px solid aqua;
+  border-radius: 5px;
+  background-color: black;
+  padding: 20px;
+}
+#styles {
+  margin: 20px;
+}
+#profile-title {
+  border: 4px solid aqua;
+  border-radius: 5px;
+  background-color: black;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Reduce the size of stars */
+.link-github svg,
+.link-github svg path {
+  width: 4%; /* Adjust the size as needed */
+  height: 4%; /* Adjust the size as needed */
+  float: left;
+}
+
+/* Apply gradient to the SVG */
+.link-github svg {
+  background-image: linear-gradient(
+    to right,
+    #00ffff,
+    #0080ff
+  ); /* Gradient from aqua to blue */
+  fill: orangered;
+}
+
+.skip-link {
+  display: block;
+  padding: 10px 20px; /* Adjust padding as needed */
+  border: 4px solid aqua; /* Set border style */
+  border-radius: 5px; /* Optional: Add border radius for rounded corners */
+  margin: 20px; /* Add margin for spacing */
+  color: aqua; /* Set text color */
+  text-decoration: none; /* Remove underline */
+  background-color: white;
+  color: blue;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+/* Style the Skip to main content link on hover */
+.skip-link:hover {
+  background-color: aqua; /* Change background color on hover */
+  color: black; /* Change text color on hover */
+  text-decoration: underline;
+}
+.page-footer {
+  border: 4px solid aqua;
+  border-radius: 5px;
+  background-color: grey;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  color: orangered;
+}
+.page-footer li {
+  list-style: none;
+}
